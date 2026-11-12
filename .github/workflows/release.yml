@@ -129,7 +129,7 @@ jobs:
 
       - name: Upload release artifacts for ${{ matrix.os }} platform
         if: ${{ env.sui_tag != 'main' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: sui-binaries-${{ matrix.os }}
           if-no-files-found: error
